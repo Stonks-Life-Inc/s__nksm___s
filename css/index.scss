@@ -1,29 +1,32 @@
-.container {  display: grid;
+//Pour utiliser le scss, il faut installer l'extension sur VSCode est cliquer sur le bouton Watch Sass en bas à droite dans la 
+//barre d'action (la barre bleue). L'icone c'est un oeil.
+//Ca vas générer des fichiers .map et .css (un fichier de chaque type/ fichier Scss).
+//Dans le HTML tu met dans le link le fichier css comme on a appris.
+.container {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-      ". titre ."
-      ". . ."
-      ". . .";
-  }
-  
-  .titre { grid-area: titre; }
-  
-// Clavier
+    grid-template-areas: ". titre ." ". . ." ". . .";
+}
 
-  // Lignes
-  .ligne-clavier {
+.titre {
+    grid-area: titre;
+}
+
+// Clavier
+// Lignes
+.ligne-clavier {
     width: 500px;
     height: 100px;
     margin-top: 10%;
     margin-bottom: 10%;
     border-width: 2px;
     border-color: green;
-  }
+}
 
-  // Lettres
-  .lettre-clavier {
+// Lettres
+.lettre-clavier {
     color: aqua;
-  }
+}
